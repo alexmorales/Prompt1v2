@@ -1,0 +1,28 @@
+Algoritmo CalcularPromedioNotas
+
+    // Declaración de variables
+    Definir cantidadNotas, nota, sumaNotas, promedio como Real
+    Definir contador como Entero
+
+    // Inicialización de variables
+    sumaNotas <- 0
+    contador <- 0
+
+    // Solicitar al usuario la cantidad de notas a ingresar
+    Escribir "Ingrese la cantidad de notas:"
+    Leer cantidadNotas
+
+    // Ciclo para ingresar las notas y calcular la suma
+    Para contador <- 1 Hasta cantidadNotas Hacer
+        Escribir "Ingrese la nota ", contador, ":"
+        Leer nota
+        sumaNotas <- sumaNotas + nota
+    FinPara
+
+    // Calcular el promedio
+    promedio <- sumaNotas / cantidadNotas
+
+    // Mostrar el resultado
+    Escribir "El promedio de las notas ingresadas es:", promedio
+
+FinAlgoritmo
